@@ -47,9 +47,9 @@ for py in "3.8" "3.7" "3.6"; do
         docker push "${IMAGE_PREFIX}-cuda${cuda}-cudnn7-runtime"
         echo
 
-echo "- [\`${IMAGE_PREFIX}-cuda$cuda}-base\` (*${cuda}/base/Dockerfile*)](${cuda}/base/Dockerfile)" >>README_.md
-echo "- [\`${IMAGE_PREFIX}-runtime-py${py}\` (*${cuda}/runtime/Dockerfile*)](${cuda}/runtime/Dockerfile)" >>README_.md
-echo "- [\`${IMAGE_PREFIX}-cudnn7-runtime-py${py}\` (*${cuda}/runtime/cudnn7/Dockerfile*)](${cuda}/runtime/cudnn7/Dockerfile)" >>README_.md
+echo "- [\`${IMAGE_PREFIX}-cuda${cuda}-base\` (*${cuda}/base/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/${cuda}/base/Dockerfile)" >>README_.md
+echo "- [\`${IMAGE_PREFIX}-cuda${cuda}-runtime\` (*${cuda}/runtime/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/${cuda}/runtime/Dockerfile)" >>README_.md
+echo "- [\`${IMAGE_PREFIX}-cuda${cuda}-cudnn7-runtime\` (*${cuda}/runtime/cudnn7/Dockerfile*)](https://github.com/cicdteam/python-cuda/blob/master/${cuda}/runtime/cudnn7/Dockerfile)" >>README_.md
 echo "" >>README_.md
 
     done
